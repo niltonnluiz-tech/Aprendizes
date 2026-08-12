@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* Theme CAMP Santo André Overrides */
+html.theme-camp body {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+/* Print CSS Rules for PDF generation */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  header,
+  footer,
+  nav,
+  .no-print,
+  button,
+  #btn-view-raw,
+  #btn-view-consolidated,
+  #btn-export-csv,
+  #tab-dashboard,
+  #tab-table,
+  #tab-solutions,
+  #tab-ai,
+  #tab-pdf {
+    display: none !important;
+  }
+
+  main {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .pdf-viewer-stage {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .pdf-page {
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 1.5cm !important;
+    page-break-after: always !important;
+    display: flex !important;
+    visibility: visible !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+}

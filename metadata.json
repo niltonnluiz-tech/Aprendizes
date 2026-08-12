@@ -1,0 +1,6 @@
+{
+  "name": "Painel de Aprendizes Ativos 2024-2026",
+  "description": "Dashboard interativo de análise e progressão de aprendizes ativos por empresa (2024, 2025, 2026) com consolidação inteligente e parecer analítico por IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
